@@ -1455,10 +1455,10 @@ class Trilogy:
             scaleroot = os.path.basename(self.scaling)[:-4]
             if self.testfirst:
                 self.showsample(f"{self.outname}_{scaleroot}.png")
-            print("Scalings:")
-            for channel in self.mode:
-                print(channel, self.levdict[channel])
-            self.makecolorimage()
+        print("Scalings:")
+        for channel in self.mode:
+            print(channel, self.levdict[channel])
+        self.makecolorimage()
 
             # Legend added in makecolorimage
             # if self.legend:
